@@ -10,12 +10,13 @@
       var t = new GEO();
       $().ready(function(){
         t.locate();
-        $("#latitude").text(t.position.latitude);
-        $("#longitude").text(t.position.longitude);
+        $("#latitude").text("Latitude: "+t.position.latitude);
+        $("#longitude").text("Longitude: "+t.position.longitude);
       })
     </script>
   </head>
   <body>
+    <h1>Simple Geolocation Javascript API test</h1>
     <form>
       <p id="latitude"></p>
       <p id="longitude"></p>
