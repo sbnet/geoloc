@@ -15,7 +15,8 @@ var GEO = function()
 
     this.error = function(err)
     {
-        $("#status").text("ERROR("+err.code+"): "+err.message);
+        var msg = "ERROR("+err.code+"): "+err.message;
+        $("#status").text(msg);
     };
 
     this.locate = function()
