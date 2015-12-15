@@ -10,13 +10,15 @@
       var t = new GEO();
       $().ready(function(){
         t.locate();
-        $("#location").text(t.position.latitude+" "+t.position.longitude);
+        $("#latitude").text(t.position.latitude);
+        $("#longitude").text(t.position.longitude);
       })
     </script>
   </head>
   <body>
     <form>
-      <p id="location"></p>
+      <p id="latitude"></p>
+      <p id="longitude"></p>
       <p id="status"></p>
     </form>
   </body>
